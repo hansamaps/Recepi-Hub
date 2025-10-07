@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Hub</title>
+  <style>
+    /* ---------- Page Background ---------- */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* ---------- Overlay for readability ---------- */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    /* ---------- Header ---------- */
+    h1 {
+      font-size: 3em;
+      margin-top: 0;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    /* ---------- Recipe Section ---------- */
+    .recipe-section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 15px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>🍴 Welcome to Recipe Hub</h1>
+    <p>Explore delicious recipes and share your favorites with others!</p>
+
+    <div class="recipe-section">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601050690597-5fd4b0e6bcbf" alt="Appetizers">
+        <h3><a href="appetizers.html" style="color:#fff;text-decoration:none;">Appetizers</a></h3>
+        <p>Start your meal with our tasty appetizer ideas!</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Desserts">
+        <h3><a href="desserts.html" style="color:#fff;text-decoration:none;">Desserts</a></h3>
+        <p>Sweet endings that everyone will love!</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Recipe Hub | Designed by [Your Name]</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
